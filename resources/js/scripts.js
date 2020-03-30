@@ -76,5 +76,19 @@ $(document).ready(() => {
         $('.first-plan').addClass('animated pulse');
     }, {
         offset: '50%'
-    })
+    });
+
+    /*mobile navigation*/
+    $('.mobile-nav-icon').click(function () {
+        const nav = $('.main-nav');
+        const icon = document.querySelector('.mobile-nav-icon ion-icon');
+
+        if (icon.getAttribute('name') === 'menu-outline') {
+            icon.setAttribute('name', 'close');
+        } else {
+            icon.setAttribute('name', 'menu-outline');
+        }
+
+        nav.slideToggle(200); // time for animation
+    });
 });
