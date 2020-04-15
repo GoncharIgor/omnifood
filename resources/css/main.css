@@ -1,4 +1,9 @@
-/*ORANGE: #e67e22*/
+/*For a global scope you can use either the :root or the body selector.
+In HTML, the root element is always the html element.*/
+
+:root{
+    --main-orange-color: #e67e22;
+}
 
 /*-----------------------------*/
 /*BASIC SETUP*/
@@ -63,7 +68,7 @@ section {
 ion-icon {
     font-size: 350%;
     display: block;
-    color: #e67e22;
+    color: var(--main-orange-color);
     margin-bottom: 10px;
 }
 
@@ -103,7 +108,7 @@ h2::after {
     margin: auto;
     margin-top: 30px;
     content: ' '; /*always has to be specified in :after class*/
-    border-bottom: 2px solid #e67e22;
+    border-bottom: 2px solid var(--main-orange-color);
 }
 
 h3 {
@@ -114,10 +119,10 @@ h3 {
 /* -------------LINKS---------------*/
 a:link,
 a:visited {
-    color: #e67e22;
+    color: var(--main-orange-color);
     text-decoration: none;
     padding-bottom: 1px;
-    border-bottom: 1px solid #e67e22;
+    border-bottom: 1px solid var(--main-orange-color);
     -webkit-transition: border-bottom 0.2s, color 0.2s;
     transition: border-bottom 0.2s, color 0.2s;
 }
@@ -137,7 +142,7 @@ input[type=submit] {
     font-weight: 300;
     text-decoration: none;
     border-radius: 200px;
-    border: 1px solid #e67e22;
+    border: 1px solid var(--main-orange-color);
     -webkit-transition: background-color 0.2s, border 0.2s;
     transition: background-color 0.2s, border 0.2s;
 }
@@ -145,15 +150,15 @@ input[type=submit] {
 .btn-full:link,
 .btn-full:visited,
 input[type=submit] {
-    background-color: #e67e22;
-    border: 1px solid #e67e22;
+    background-color: var(--main-orange-color);
+    border: 1px solid var(--main-orange-color);
     color: white;
     margin-right: 15px;
 }
 
 .btn-ghost:link,
 .btn-ghost:visited {
-    color: #e67e22;
+    color: var(--main-orange-color);
 }
 
 .btn:hover,
@@ -242,7 +247,7 @@ header {
 
 .main-nav li a:hover,
 .main-nav li a:active {
-    border-bottom: 2px solid #e67e22;
+    border-bottom: 2px solid var(--main-orange-color);
 }
 
 /*-----mobile navigation-----*/
@@ -377,8 +382,8 @@ header {
 }
 
 .works-step div {
-    color: #e67e22;
-    border: 2px solid #e67e22;
+    color: var(--main-orange-color);
+    border: 2px solid var(--main-orange-color);
     display: inline-block;
     border-radius: 50%;
     height: 55px;
@@ -511,7 +516,7 @@ cite img {
     font-size: 300%;
     margin-bottom: 10px;
     font-weight: 100;
-    color: #e67e22;
+    color: var(--main-orange-color);
 }
 
 .plan-price span {
